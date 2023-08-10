@@ -25,33 +25,32 @@ describe Solver do
     end
   end
 
+  #testing for fizzbuzz
   describe '#fizzbuzz' do
-    context 'when the given number is divisible by 3' do
-      it 'should return the string "fizz"' do
-        three = subject.fizzbuzz(3)
-        expect(three).to eq('fizz')
-      end
-    end
-
-    context 'when the given number is divisible by 5' do
-      it 'should return the string "buzz' do
-        five = subject.fizzbuzz(5)
-        expect(five).to eq('buzz')
-      end
-    end
-
-    context 'when the given number is divisible by 3 and 5' do
-      it 'should return the string "fizzbuzz"' do
-        fifteen = subject.fizzbuzz(15)
-        expect(fifteen).to eq('fizzbuzz')
-      end
-    end
-
-    context 'when the given number is not divisible by 3 or 5' do
-      it 'should return the given number as string' do
-        two = subject.fizzbuzz(2)
-        expect(two).to eq('2')
-      end
+  context 'when the given number is divisible by 3' do
+    it 'should return the string "fizz"' do
+      three = subject.fizzbuzz(3)
+      expect(three).to eq('fizz')
     end
   end
+  context 'when the given number is divisible by 5' do
+    it 'should return the string "buzz' do
+      five = subject.fizzbuzz(5)
+      expect(five).to eq('buzz')
+    end
+  end
+  context 'when the given number is divisible by 3 and 5' do
+    it 'should return the string "fizzbuzz"' do
+      fifteen = subject.fizzbuzz(15)
+      expect(fifteen).to eq('fizzbuzz')
+    end
+  end
+  context 'when the given number is not divisible by 3 or 5' do
+    it 'should return the given number as string' do
+      two = subject.fizzbuzz(2)
+      expect(two).to eq('2')
+    end
+  end
+end
+end 
 end
