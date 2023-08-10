@@ -15,6 +15,14 @@ describe Solver do
       end
     end
   end
+  describe '#reverse' do
+    context 'when a string is given' do
+      it 'should return the reversed string' do
+        reversed_string = subject.reverse('hello')
+        expect(reversed_string).to eq('olleh')
+      end
+    end
+  end
 end
 
   
