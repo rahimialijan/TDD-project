@@ -54,5 +54,4 @@ context 'when the given number is not divisible by 3 or 5' do
       end
     end
   end
-end
-    
+end    
